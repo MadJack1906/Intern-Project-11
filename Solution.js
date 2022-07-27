@@ -1,4 +1,0 @@
-function isPrimeNumber () {
-    
-    return false;
-}
