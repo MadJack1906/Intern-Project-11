@@ -1,5 +1,5 @@
 let palindrome = "kayak";
-
+console.log("Is kayak a palindrome?")
 console.log(isPalindrome(palindrome))
 
 function isPalindrome(palindrome){

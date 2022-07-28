@@ -7,5 +7,5 @@ for (let i = 0; i < string.length; i++) {
         possibleCombination.push(possibleCombination[possibleCombination.length-1] + string[j]);
     }
 }
-
+console.log("Possible Combination of the string: dog")
 console.log(possibleCombination);
