@@ -1,4 +1,4 @@
-let string = "asdasdasd";
+let string = "OJZroysyPTBNcTfKilAo";
 let stringArray = Array.from(string);
 let letterOccurrences = []; // key value pair of occurrence of a letter e.g. a: 1
 
