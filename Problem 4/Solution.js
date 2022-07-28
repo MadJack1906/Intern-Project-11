@@ -1,5 +1,5 @@
-let string = "webmaster";
+console.log(alphabeticalOrder("webmaster"))
 
-let stringArray = Array.from(string);
-
-console.log(stringArray.sort());
+function alphabeticalOrder(x) {
+    return Array.from(x).sort().toString().replace(/,/g, "");
+}
