@@ -1,0 +1,36 @@
+$black: #111827;
+$red: #ff312e;
+$blue: #6610f2;
+$yellow: #f7b32b;
+$white: #fffffa;
+
+.main-container {
+    height: 100vh;
+    max-width: 100%;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &--border {
+        border: 1px solid $black;
+    }
+}
+
+.problem-title-container {
+    max-height: 100%;
+    width: 100%;
+    
+    display: flex;
+    
+
+    border-right: 1px solid lightgray;
+}   
+
+.problem-container {
+    width: 100%;
+
+    background-color: $red;
+}

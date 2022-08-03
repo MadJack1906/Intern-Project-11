@@ -1,0 +1,27 @@
+.main-container {
+  height: 100vh;
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.content--border {
+  border: 1px solid #111827;
+}
+
+.problem-title-container {
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  border-right: 1px solid lightgray;
+}
+
+.problem-container {
+  width: 100%;
+  background-color: #ff312e;
+}
+
+/*# sourceMappingURL=index.css.map */
