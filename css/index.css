@@ -1,21 +1,27 @@
+body {
+  max-width: 100%;
+}
+
 .main-container {
   height: 100vh;
   max-width: 100%;
-  position: fixed;
+  overflow-y: scroll;
 }
 
 .content {
   display: flex;
   width: 100%;
   height: 100%;
+  overflow-y: hidden;
 }
 .content--border {
   border: 1px solid #111827;
 }
 
 .side-bar-container {
+  height: 100%;
   width: 100%;
-  flex-basis: 25%;
+  flex-basis: 20%;
   overflow-y: scroll;
 }
 .side-bar-container::-webkit-scrollbar {
@@ -38,8 +44,21 @@
 }
 
 .problem-container {
+  display: flex;
+  flex-basis: 80%;
   width: 100%;
-  background-color: #ff312e;
+  flex-direction: column;
 }
 
-/*# sourceMappingURL=index.css.map */
+.problem-info-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=index.css.map */
