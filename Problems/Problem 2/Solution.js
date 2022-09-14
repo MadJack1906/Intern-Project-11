@@ -1,6 +1,6 @@
-let palindrome = "kayak";
-console.log("Is kayak a palindrome?")
-console.log(isPalindrome(palindrome))
+// let palindrome = "kayak";
+// console.log("Is kayak a palindrome?")
+// console.log(isPalindrome(palindrome))
 
 function isPalindrome(palindrome){
     let isPalindrome = false;
@@ -17,5 +17,5 @@ function isPalindrome(palindrome){
         }
     }
 
-    return isPalindrome;
+    document.getElementById('problem-two-output').textContent = isPalindrome;
 }

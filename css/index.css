@@ -61,4 +61,23 @@ body {
   height: 2px;
   width: 100%;
   border-bottom: 1px solid black;
+}
+
+.input-box {
+  border: 1px solid red;
+}
+
+.problem-selector {
+  width: 100%;
+  padding: 1em 0.5em;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.problem-selector:hover {
+  background-color: lightgrey;
+  color: white;
+}
+.problem-selector-active {
+  border-left: 4px solid #111827;
 }/*# sourceMappingURL=index.css.map */

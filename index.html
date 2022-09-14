@@ -62,79 +62,79 @@
         </header>
 
         <div class="content content--border">
-            <div class="side-bar-container">
+            <div class="side-bar-container" id="side-bar">
                 <div class="problem-title-container border-b p-3">
                     <p class="font-sans text-m font-bold">Problems</p>
                 </div>
 
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 1</a>
-                </div>
+                <button type="button" id="problem-one-btn" onclick="tabs(event, 'problem-one-btn')" class="problem-selector problem-selector-active" >Problem 1</button>
 
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 2</a>
-                </div>
+                <button type="button" id="problem-two-btn" onclick="tabs(event, 'problem-two-btn')" class="problem-selector" >Problem 2</button>
 
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 3</a>
-                </div>
+                <button type="button" id="problem-three-btn" onclick="tabs(event, 'problem-three-btn')" class="problem-selector" >Problem 3</button>
 
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 4</a>
-                </div>
-              
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 5</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 6</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 7</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 8</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 9</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 10</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 11</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 12</a>
-                </div>
-
-                <div class="problems-container p-3 text-sm">
-                    <a href="#">Problem 13</a>
-                </div>
-
-                <!-- Problems Here -->
             </div>
-            <div class="problem-container p-5 border">
-                <div class="problem-info-container pb-5">
-                    <h2 class="problem-number text-2xl font-bold mb-1">Problem #1</h2>
-                    <p class="problem-details">Write a JavaScript function that reverse a number.</p>
+
+            <!-- Problems Here -->
+
+            <div class="content-container container flex-col">
+                <!-- Problems #1 -->
+
+                <div class="problem-container p-5 border h-screen" id="problem-one-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #1</h2>
+                        <p class="problem-details">Write a JavaScript function that reverse a number.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="number" id="reverse-number" onkeyup="reverseNumber(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="output"></p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="separator"></div>
+                <!-- Problem two -->
 
-                
+                <div class="problem-container p-5 border hidden h-screen" id="problem-two-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #2</h2>
+                        <p class="problem-details">Write a JavaScript function that checks whether a passed string is
+                            palindrome or not? A palindrome is word, phrase, or sequence that reads the same backward as
+                            forward, e.g., madam or nurses run.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="text" id="reverse-number" onkeyup="isPalindrome(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-two-output"></p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </div>
 
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/Problems/Problem 1/Solution.js"></script>
+    <script src="/Problems/Problem 2/Solution.js"></script>
 
 </body>
 
