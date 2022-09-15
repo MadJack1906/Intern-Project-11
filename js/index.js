@@ -9,8 +9,11 @@ function tabs(event, tabName) {
     previousActiveElement.classList.remove(activeClass);
     activeElement.classList.add(activeClass);
 
-    let previousContent = document.getElementsByClassName('problem-container p-5 border h-screen')[0];
-    previousContent.classList.add('hidden')
+    let previousContent = document.getElementsByClassName('problem-container p-5 border h-screen');
+    
+    for (let element of previousContent) {
+        element.classList.add('hidden')
+    }
 
     switch(tabName) {
         case 'problem-one-btn':
@@ -21,7 +24,13 @@ function tabs(event, tabName) {
             document.getElementById('problem-two-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-three-btn':
+            document.getElementById('problem-three-cntnt').classList.remove('hidden');
+        break;
+
         // Add the remaining cases here
     }
     
+    console.log(`${document.getElementsByClassName('problem-container p-5 border h-screen').length}`);
+
 }
