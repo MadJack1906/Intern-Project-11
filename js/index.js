@@ -48,6 +48,10 @@ function tabs(event, tabName) {
             document.getElementById('problem-eight-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-thirteen-btn':
+            document.getElementById('problem-thirteen-cntnt').classList.remove('hidden');
+        break;
+
         case 'problem-four-teen-btn':
             document.getElementById('problem-four-teen-cntnt').classList.remove('hidden');
         break;

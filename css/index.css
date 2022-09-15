@@ -112,4 +112,8 @@ body {
   background-color: #fffffa !important;
   border: 1px solid #111827;
   color: #111827;
+}
+
+.output {
+  word-break: break-all;
 }/*# sourceMappingURL=index.css.map */

@@ -93,7 +93,10 @@
 
                 <button type="button" id="problem-eight-btn" onclick="tabs(event, 'problem-eight-btn')"
                     class="problem-selector">Problem 9 TODO: LATER</button>
-                
+
+                    
+                <button type="button" id="problem-thirteen-btn" onclick="tabs(event, 'problem-thirteen-btn')"
+                class="problem-selector">Problem 13</button>
 
                 <button type="button" id="problem-four-teen-btn" onclick="tabs(event, 'problem-four-teen-btn')"
                     class="problem-selector">Problem 14</button>
@@ -309,7 +312,42 @@
 
                 </div>
 
-                <!-- Problem Fifth teen -->
+                <!-- Problem Thirteen -->
+
+                <div class="problem-container p-5 border hidden" id="problem-thirteen-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #13</h2>
+                        <p class="problem-details">Write a JavaScript function that generates a string id (specified
+                            length) of random characters.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold mb-5">Input:</h2>
+
+                            <!-- String -->
+                            <small class="input-field-label" id="thirteen-input-placeholder">Put the id length here:
+                            </small>
+
+                            <input type="number" id="string-length-input-thirteen" placeholder="Put the id length here"
+                                class="input-field" onclick="showLabel('thirteen-input-placeholder')">
+
+                            <button type="button" class="button"
+                                onclick="generateId('string-length-input-thirteen')">Generate</button>
+
+                        </div>
+
+                        <div class="output-container">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-thirteen-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Problem Fourteen -->
 
                 <div class="problem-container p-5 border hidden" id="problem-four-teen-cntnt">
                     <div class="problem-info-container pb-5">
@@ -324,22 +362,28 @@
                     <div class="container py-5">
                         <div class="input-field col s12">
                             <h2 class="font-bold mb-5">Input:</h2>
-                            
+
                             <!-- String -->
 
-                            <small class="input-field-label" id="four-teen-string-placeholder">Put the string here: </small>
+                            <small class="input-field-label" id="four-teen-string-placeholder">Put the string here:
+                            </small>
 
-                            <input type="text" id="string-input-four-teen" placeholder="Put the string here" class="input-field" onclick="showLabel('four-teen-string-placeholder')">
-                            
+                            <input type="text" id="string-input-four-teen" placeholder="Put the string here"
+                                class="input-field" onclick="showLabel('four-teen-string-placeholder')">
+
                             <!-- Letter -->
 
-                            <small class="input-field-label" id="four-teen-letter-placeholder">Put the letter here: </small>
+                            <small class="input-field-label" id="four-teen-letter-placeholder">Put the letter here:
+                            </small>
 
-                            <input type="text" id="letter-four-teen" placeholder="Put the letter here" class="input-field" onclick="showLabel('four-teen-letter-placeholder')">
+                            <input type="text" id="letter-four-teen" placeholder="Put the letter here"
+                                class="input-field" onclick="showLabel('four-teen-letter-placeholder')">
 
                             <!-- Button -->
-                            
-                            <button type="button" class="button" onclick="findTheLetterOccurrences('string-input-four-teen', 'letter-four-teen')">Find the letter occurrence</button>
+
+                            <button type="button" class="button"
+                                onclick="findTheLetterOccurrences('string-input-four-teen', 'letter-four-teen')">Find
+                                the letter occurrence</button>
 
                         </div>
 
@@ -393,6 +437,7 @@
     <script src="/Problems/Problem 7/Solution.js"></script>
     <script src="/Problems/Problem 8 Is Prime/Solution.js"></script>
 
+    <script src="/Problems/Problem 13/Solution.js"></script>
     <script src="/Problems/Problem 14/Solution.js"></script>
     <script src="/Problems/Problem 15/Solution.js"></script>
 
