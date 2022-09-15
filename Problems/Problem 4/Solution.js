@@ -1,5 +1,6 @@
-console.log(alphabeticalOrder("webmaster"))
+//console.log(alphabeticalOrder("webmaster"))
 
 function alphabeticalOrder(x) {
-    return Array.from(x).sort().toString().replace(/,/g, "");
+    let output = Array.from(x).sort().toString().replace(/,/g, "");
+    document.getElementById('problem-four-output').textContent = output;
 }

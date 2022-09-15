@@ -9,7 +9,7 @@ function tabs(event, tabName) {
     previousActiveElement.classList.remove(activeClass);
     activeElement.classList.add(activeClass);
 
-    let previousContent = document.getElementsByClassName('problem-container p-5 border h-screen');
+    let previousContent = document.getElementsByClassName('problem-container p-5 border');
     
     for (let element of previousContent) {
         element.classList.add('hidden')
@@ -26,6 +26,10 @@ function tabs(event, tabName) {
 
         case 'problem-three-btn':
             document.getElementById('problem-three-cntnt').classList.remove('hidden');
+        break;
+
+        case 'problem-four-btn':
+            document.getElementById('problem-four-cntnt').classList.remove('hidden');
         break;
 
         // Add the remaining cases here

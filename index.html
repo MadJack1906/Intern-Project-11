@@ -73,6 +73,8 @@
 
                 <button type="button" id="problem-three-btn" onclick="tabs(event, 'problem-three-btn')" class="problem-selector" >Problem 3</button>
 
+                <button type="button" id="problem-four-btn" onclick="tabs(event, 'problem-four-btn')" class="problem-selector" >Problem 4</button>
+
             </div>
 
             <!-- Problems Here -->
@@ -80,7 +82,7 @@
             <div class="content-container container flex-col">
                 <!-- Problems #1 -->
 
-                <div class="problem-container p-5 border h-screen" id="problem-one-cntnt">
+                <div class="problem-container p-5 border" id="problem-one-cntnt">
                     <div class="problem-info-container pb-5">
                         <h2 class="problem-number text-2xl font-bold mb-3">Problem #1</h2>
                         <p class="problem-details">Write a JavaScript function that reverse a number.</p>
@@ -104,7 +106,7 @@
 
                 <!-- Problem two -->
 
-                <div class="problem-container p-5 border hidden h-screen" id="problem-two-cntnt">
+                <div class="problem-container p-5 border hidden" id="problem-two-cntnt">
                     <div class="problem-info-container pb-5">
                         <h2 class="problem-number text-2xl font-bold mb-3">Problem #2</h2>
                         <p class="problem-details">Write a JavaScript function that checks whether a passed string is
@@ -151,6 +153,32 @@
                     </div>
 
                 </div>
+
+                <!-- Problem four -->
+
+                <div class="problem-container p-5 border hidden" id="problem-four-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #4</h2>
+                        <p class="problem-details">A JavaScript function that generates all combinations of a string.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="text" id="reverse-number" onkeyup="alphabeticalOrder(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-four-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
         </div>
@@ -160,6 +188,7 @@
     <script src="/Problems/Problem 1/Solution.js"></script>
     <script src="/Problems/Problem 2/Solution.js"></script>
     <script src="/Problems/Problem 3/Solution.js"></script>
+    <script src="/Problems/Problem 4/Solution.js"></script>
 
 </body>
 
