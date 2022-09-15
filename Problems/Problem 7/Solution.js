@@ -10,5 +10,9 @@ function vowelCount(string) {
     let pattern = /[aeiouAEIOU]/g;
     let vowels = string.match(pattern);
 
-    document.getElementById('problem-seven-output').textContent = vowels.length;
+    if (string.length != 0) {
+        document.getElementById('problem-seven-output').textContent = vowels.length;
+    } else {
+        document.getElementById('problem-seven-output').textContent = '';
+    }
 }
