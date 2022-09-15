@@ -77,6 +77,8 @@
 
                 <button type="button" id="problem-five-btn" onclick="tabs(event, 'problem-five-btn')" class="problem-selector" >Problem 5</button>
 
+                <button type="button" id="problem-six-btn" onclick="tabs(event, 'problem-six-btn')" class="problem-selector" >Problem 6</button>
+
             </div>
 
             <!-- Problems Here -->
@@ -204,6 +206,30 @@
 
                 </div>
 
+                <!-- Problem six -->
+
+                <div class="problem-container p-5 border hidden" id="problem-six-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #6</h2>
+                        <p class="problem-details">Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="text" id="longest-word" onkeyup="longestWord(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-six-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -216,6 +242,7 @@
     <script src="/Problems/Problem 3/Solution.js"></script>
     <script src="/Problems/Problem 4/Solution.js"></script>
     <script src="/Problems/Problem 5/Solution.js"></script>
+    <script src="/Problems/Problem 6/Solution.js"></script>
 
 </body>
 
