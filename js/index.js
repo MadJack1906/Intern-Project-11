@@ -48,6 +48,9 @@ function tabs(event, tabName) {
             document.getElementById('problem-eight-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-four-teen-btn':
+            document.getElementById('problem-four-teen-cntnt').classList.remove('hidden');
+        break;
 
         case 'problem-fifth-teen-btn':
             document.getElementById('problem-fifth-teen-cntnt').classList.remove('hidden');
@@ -58,4 +61,8 @@ function tabs(event, tabName) {
     
     console.log(`${document.getElementsByClassName('problem-container p-5 border h-screen').length}`);
 
+}
+
+function showLabel(label) {
+    document.getElementById(label).style.display = 'block';
 }

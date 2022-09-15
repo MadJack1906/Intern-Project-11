@@ -82,4 +82,34 @@ body {
 }
 .problem-selector-active {
   border-left: 4px solid #111827;
+}
+
+.input-field::-moz-placeholder {
+  font-style: italic;
+}
+
+.input-field:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.input-field::placeholder {
+  font-style: italic;
+}
+
+.input-field-label {
+  display: none;
+  font-weight: 500;
+}
+
+.button {
+  background-color: #111827 !important;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+.button:hover {
+  background-color: #fffffa !important;
+  border: 1px solid #111827;
+  color: #111827;
 }/*# sourceMappingURL=index.css.map */

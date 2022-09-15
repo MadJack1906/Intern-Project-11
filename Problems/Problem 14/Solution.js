@@ -1,16 +1,19 @@
-console.log(findTheLetterOccurrences("aaaaaaa", "a"))
+//console.log(findTheLetterOccurrences("aaaaaaa", "a"))
 
 function findTheLetterOccurrences(string, letter) {
+    string = document.getElementById(string).value;
+    letter = document.getElementById(letter).value;
+
     let occurrences = string.match(new RegExp(letter, "g"));
     console.log(typeof string.match(new RegExp(letter, "g")))
 
     if (occurrences != null) {
 
-        return occurrences.length;
+        document.getElementById('problem-four-teen-output').textContent = occurrences.length;
 
     } else {
 
-        return 0;
+        document.getElementById('problem-four-teen-output').textContent = '';
 
     }
 }
