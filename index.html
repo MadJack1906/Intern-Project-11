@@ -75,6 +75,8 @@
 
                 <button type="button" id="problem-four-btn" onclick="tabs(event, 'problem-four-btn')" class="problem-selector" >Problem 4</button>
 
+                <button type="button" id="problem-five-btn" onclick="tabs(event, 'problem-five-btn')" class="problem-selector" >Problem 5</button>
+
             </div>
 
             <!-- Problems Here -->
@@ -178,6 +180,30 @@
 
                 </div>
 
+                <!-- Problem five -->
+
+                <div class="problem-container p-5 border hidden" id="problem-five-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #5</h2>
+                        <p class="problem-details">Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="text" id="uppercase-first-letter" onkeyup="uppercaseWordFirstLetter(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-five-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -189,6 +215,7 @@
     <script src="/Problems/Problem 2/Solution.js"></script>
     <script src="/Problems/Problem 3/Solution.js"></script>
     <script src="/Problems/Problem 4/Solution.js"></script>
+    <script src="/Problems/Problem 5/Solution.js"></script>
 
 </body>
 

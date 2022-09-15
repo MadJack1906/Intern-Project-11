@@ -32,6 +32,10 @@ function tabs(event, tabName) {
             document.getElementById('problem-four-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-five-btn':
+            document.getElementById('problem-five-cntnt').classList.remove('hidden');
+        break;
+
         // Add the remaining cases here
     }
     
