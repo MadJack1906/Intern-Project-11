@@ -83,6 +83,11 @@
 
                 <button type="button" id="problem-eight-btn" onclick="tabs(event, 'problem-eight-btn')" class="problem-selector" >Problem 8  TODO: LATER</button>
 
+                <button type="button" id="problem-eight-btn" onclick="tabs(event, 'problem-eight-btn')" class="problem-selector" >Problem 9  TODO: LATER</button>
+
+
+                <button type="button" id="problem-fifth-teen-btn" onclick="tabs(event, 'problem-fifth-teen-btn')" class="problem-selector" >Problem 15</button>
+
             </div>
 
             <!-- Problems Here -->
@@ -284,6 +289,30 @@
                 </div>
 
 
+                <!-- Problem Fifth teen -->
+
+                <div class="problem-container p-5 border hidden" id="problem-fifth-teen-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #15</h2>
+                        <p class="problem-details">Write a JavaScript function to find the first not repeated character</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold">Input:</h2>
+                            <input type="text" id="first-repeated-character" onkeyup="firstRepeatedCharacter(this.value)">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-fifth-teen-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -299,6 +328,8 @@
     <script src="/Problems/Problem 6/Solution.js"></script>
     <script src="/Problems/Problem 7/Solution.js"></script>
     <script src="/Problems/Problem 8 Is Prime/Solution.js"></script>
+
+    <script src="/Problems/Problem 15/Solution.js"></script>
 
 </body>
 
