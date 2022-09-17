@@ -48,6 +48,10 @@ function tabs(event, tabName) {
             document.getElementById('problem-eight-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-eleven-btn':
+            document.getElementById('problem-eleven-cntnt').classList.remove('hidden');
+        break;
+
         case 'problem-twelve-btn':
             document.getElementById('problem-twelve-cntnt').classList.remove('hidden');
         break;
@@ -72,5 +76,5 @@ function tabs(event, tabName) {
 }
 
 function showLabel(label) {
-    document.getElementById(label).style.display = 'block';
+    document.getElementById(label).style.visibility = 'visible';
 }

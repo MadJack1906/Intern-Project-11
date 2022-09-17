@@ -97,7 +97,7 @@ body {
 }
 
 .input-field-label {
-  display: none;
+  visibility: hidden;
   font-weight: 500;
 }
 
