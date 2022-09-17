@@ -48,6 +48,10 @@ function tabs(event, tabName) {
             document.getElementById('problem-eight-cntnt').classList.remove('hidden');
         break;
 
+        case 'problem-twelve-btn':
+            document.getElementById('problem-twelve-cntnt').classList.remove('hidden');
+        break;
+
         case 'problem-thirteen-btn':
             document.getElementById('problem-thirteen-cntnt').classList.remove('hidden');
         break;
@@ -63,7 +67,7 @@ function tabs(event, tabName) {
         // Add the remaining cases here
     }
     
-    console.log(`${document.getElementsByClassName('problem-container p-5 border h-screen').length}`);
+    //console.log(`${document.getElementsByClassName('problem-container p-5 border h-screen').length}`);
 
 }
 

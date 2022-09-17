@@ -94,9 +94,11 @@
                 <button type="button" id="problem-eight-btn" onclick="tabs(event, 'problem-eight-btn')"
                     class="problem-selector">Problem 9 TODO: LATER</button>
 
-                    
+                <button type="button" id="problem-twelve-btn" onclick="tabs(event, 'problem-twelve-btn')"
+                    class="problem-selector">Problem 12</button>
+
                 <button type="button" id="problem-thirteen-btn" onclick="tabs(event, 'problem-thirteen-btn')"
-                class="problem-selector">Problem 13</button>
+                    class="problem-selector">Problem 13</button>
 
                 <button type="button" id="problem-four-teen-btn" onclick="tabs(event, 'problem-four-teen-btn')"
                     class="problem-selector">Problem 14</button>
@@ -311,6 +313,40 @@
                     </div>
 
                 </div>
+                
+                <!-- Problem Twelve -->
+
+                <div class="problem-container p-5 border hidden" id="problem-twelve-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #12</h2>
+                        <p class="problem-details">Write a JavaScript function to get the number of occurrences of each letter in specified string</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold mb-5">Input:</h2>
+
+                            <!-- String -->
+                            <small class="input-field-label" id="twelve-input-placeholder">Put the string here:
+                            </small>
+
+                            <input type="text" id="string-length-input-twelve" placeholder="Put the string here"
+                                class="input-field" onclick="showLabel('twelve-input-placeholder')">
+
+                            <button type="button" class="button"
+                                onclick="letterOccurrences('string-length-input-twelve')">Find the letter occurrences</button>
+
+                        </div>
+
+                        <div class="output-container">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-twelve-output"></p>
+                        </div>
+                    </div>
+
+                </div>
 
                 <!-- Problem Thirteen -->
 
@@ -436,7 +472,8 @@
     <script src="/Problems/Problem 6/Solution.js"></script>
     <script src="/Problems/Problem 7/Solution.js"></script>
     <script src="/Problems/Problem 8 Is Prime/Solution.js"></script>
-
+    
+    <script src="/Problems/Problem 12/Solution.js"></script>
     <script src="/Problems/Problem 13/Solution.js"></script>
     <script src="/Problems/Problem 14/Solution.js"></script>
     <script src="/Problems/Problem 15/Solution.js"></script>
