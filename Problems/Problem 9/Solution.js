@@ -1,7 +1,9 @@
-let value = "String";
+//let value = "String";
 
 function returnTypeOf(object){
-    return typeof object;
+    let type = typeof eval(document.getElementById(object).value);
+    
+    document.getElementById('problem-nine-output').textContent = type.toString();
 }
-console.log("What is the type of a value variable (string)");
-console.log(returnTypeOf(value));
+// console.log("What is the type of a value variable (string)");
+// console.log(returnTypeOf(value));
