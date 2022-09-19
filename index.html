@@ -94,6 +94,9 @@
                 <button type="button" id="problem-eight-btn" onclick="tabs(event, 'problem-eight-btn')"
                     class="problem-selector">Problem 9 TODO: LATER</button>
 
+                <button type="button" id="problem-ten-btn" onclick="tabs(event, 'problem-ten-btn')"
+                    class="problem-selector">Problem 10</button>
+
                 <button type="button" id="problem-eleven-btn" onclick="tabs(event, 'problem-eleven-btn')"
                     class="problem-selector">Problem 11</button>
 
@@ -317,6 +320,43 @@
 
                 </div>
 
+                <!-- Problem Ten -->
+
+                <div class="problem-container p-5 border hidden" id="problem-ten-cntnt">
+                    <div class="problem-info-container pb-5">
+                        <h2 class="problem-number text-2xl font-bold mb-3">Problem #10</h2>
+                        <p class="problem-details">Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="container py-5">
+                        <div class="input-field col s12">
+                            <h2 class="font-bold mb-5">Input:</h2>
+
+                            <div class="input">
+                                <!-- String -->
+                                <small class="input-field-label" id="array-of-numbers">Put the array of numbers here:
+                                </small>
+
+                                <input type="text" id="number-array-input-ten" value="0"
+                                    placeholder="Put the array of numbers here" class="input-field"
+                                    onclick="showLabel('array-of-numbers')">
+                            </div>
+
+                            <button type="button" class="button"
+                                onclick="getSecondLowestAndHighest('number-array-input-ten')">Find the second lowest and highest number</button>
+
+                        </div>
+
+                        <div class="output-container">
+                            <h2 class="font-bold">Output:</h2>
+                            <p class="output italic mt-5" id="problem-ten-output"></p>
+                        </div>
+                    </div>
+
+                </div>
+
                 <!-- Problem Eleven -->
 
                 <div class="problem-container p-5 border hidden" id="problem-eleven-cntnt">
@@ -337,8 +377,9 @@
                                     <small class="input-field-label" id="eleven-amount-placeholder">Put the amount here:
                                     </small>
 
-                                    <input type="number" id="amount-input-eleven" value="0" placeholder="Put the amount here"
-                                        class="input-field" onclick="showLabel('eleven-amount-placeholder')">
+                                    <input type="number" id="amount-input-eleven" value="0"
+                                        placeholder="Put the amount here" class="input-field"
+                                        onclick="showLabel('eleven-amount-placeholder')">
                                 </div>
 
                                 <div class="input">
@@ -346,8 +387,9 @@
                                     <small class="input-field-label" id="eleven-coins-placeholder">Put the coins here:
                                     </small>
 
-                                    <input type="text" id="coins-input-eleven" value="0" placeholder="Put the coins here"
-                                        class="input-field" onclick="showLabel('eleven-coins-placeholder')">
+                                    <input type="text" id="coins-input-eleven" value="0"
+                                        placeholder="Put the coins here" class="input-field"
+                                        onclick="showLabel('eleven-coins-placeholder')">
                                 </div>
                             </div>
 
@@ -525,7 +567,7 @@
     <script src="/Problems/Problem 6/Solution.js"></script>
     <script src="/Problems/Problem 7/Solution.js"></script>
     <script src="/Problems/Problem 8 Is Prime/Solution.js"></script>
-    
+    <script src="/Problems/Problem 10/Solution.js"></script>
     <script src="/Problems/Problem 11/Solution.js"></script>
     <script src="/Problems/Problem 12/Solution.js"></script>
     <script src="/Problems/Problem 13/Solution.js"></script>
